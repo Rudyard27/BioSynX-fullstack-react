@@ -1,0 +1,19 @@
+{
+  "name": "biosynx-platform",
+  "version": "1.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "build": "esbuild src/main.jsx --bundle --minify --target=es2020 --format=iife --outfile=public/assets/app.js"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.0"
+  },
+  "engines": { "node": ">=22.5" }
+}
